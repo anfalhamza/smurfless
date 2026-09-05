@@ -1,0 +1,410 @@
+/* =========================
+   GENERAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #17212b;
+    background: #ffffff;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+header {
+    background: #ffffff;
+    border-bottom: 1px solid #e8edf2;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 18px 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 800;
+    color: #0b4f6c;
+    line-height: 1;
+}
+
+.logo span {
+    display: block;
+}
+
+.logo small {
+    display: block;
+    font-size: 8px;
+    letter-spacing: 2px;
+    color: #7a8791;
+    margin-top: 5px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 28px;
+}
+
+.nav-links a {
+    color: #4d5963;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    color: #0b4f6c;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 650px;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(7, 45, 63, 0.97),
+            rgba(7, 45, 63, 0.88),
+            rgba(7, 45, 63, 0.65)
+        );
+
+    color: white;
+}
+
+.hero-content {
+    width: 1200px;
+    max-width: 90%;
+    margin: auto;
+}
+
+.tag {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #8fd3e8;
+}
+
+.hero h1 {
+    font-size: 68px;
+    line-height: 1.05;
+    margin: 20px 0;
+    max-width: 750px;
+}
+
+.hero h1 strong {
+    color: #8fd3e8;
+}
+
+.hero p {
+    max-width: 700px;
+    font-size: 18px;
+    color: #d8e5eb;
+    margin-bottom: 35px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.primary-button,
+.secondary-button {
+    padding: 13px 23px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.primary-button {
+    background: #ffffff;
+    color: #0b4f6c;
+}
+
+.secondary-button {
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
+
+.primary-button:hover,
+.secondary-button:hover {
+    opacity: 0.85;
+}
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+.section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 90px 25px;
+}
+
+.section-heading {
+    max-width: 720px;
+    margin-bottom: 45px;
+}
+
+.section-heading span,
+.about-content > span {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #0b7599;
+}
+
+.section-heading h2,
+.about-content h2 {
+    font-size: 40px;
+    line-height: 1.2;
+    margin: 10px 0 15px;
+}
+
+.section-heading p {
+    color: #687681;
+}
+
+
+/* =========================
+   ARTICLE CARDS
+========================= */
+
+.articles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.article-card {
+    border: 1px solid #e4e9ed;
+    border-radius: 10px;
+    padding: 30px;
+    background: white;
+    transition: 0.25s;
+}
+
+.article-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+}
+
+.article-category {
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    color: #0b7599;
+    margin-bottom: 15px;
+}
+
+.article-card h3 {
+    font-size: 21px;
+    line-height: 1.3;
+    margin-bottom: 15px;
+}
+
+.article-card p {
+    color: #697680;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.read-more {
+    color: #0b7599;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   RESEARCH
+========================= */
+
+.research-section {
+    background: #f2f7f9;
+    padding: 90px 25px;
+}
+
+.research-section .section-heading,
+.research-stats {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.research-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.research-stats div {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    border-left: 4px solid #0b7599;
+}
+
+.research-stats strong {
+    display: block;
+    font-size: 20px;
+}
+
+.research-stats span {
+    color: #78858e;
+    font-size: 14px;
+}
+
+
+/* =========================
+   CLINICAL INSIGHTS
+========================= */
+
+.insight-box {
+    background: #f8fafb;
+    border: 1px solid #e4eaee;
+    border-radius: 10px;
+    padding: 40px;
+    max-width: 900px;
+}
+
+.insight-box h3 {
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.insight-box p {
+    color: #65727c;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about-section {
+    background: #07364a;
+    color: white;
+    padding: 100px 25px;
+}
+
+.about-content {
+    max-width: 850px;
+    margin: auto;
+}
+
+.about-content h2 {
+    margin-top: 12px;
+}
+
+.about-content p {
+    color: #c9dce4;
+    margin-top: 20px;
+}
+
+.about-content > span {
+    color: #8fd3e8;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #052633;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+footer p {
+    color: #9db3bd;
+    margin-top: 8px;
+}
+
+.copyright {
+    font-size: 12px;
+    margin-top: 25px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 800px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        min-height: 600px;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .articles {
+        grid-template-columns: 1fr;
+    }
+
+    .research-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .section-heading h2,
+    .about-content h2 {
+        font-size: 32px;
+    }
+}
